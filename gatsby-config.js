@@ -29,6 +29,17 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `IBM Plex Sans`,
+            variants: ['400', '400i', '600i', '700']
+          }
+        ],
+      }
+    },
+    {
       resolve: 'gatsby-source-wordpress',
       options: {
         // The base url to your WP site.

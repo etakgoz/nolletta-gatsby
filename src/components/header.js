@@ -1,12 +1,32 @@
 import React from 'react';
-import { Link, graphql } from "gatsby"
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
+import logo from '../img/logo.svg'
+import { Container } from 'react-bootstrap';
+import { Link } from 'gatsby'
+
+const Separator = (props) => {
+  return (
+    <span>&#47;</span>
+  );
+};
 
 const Header = (props) => {
   return (
-    <div>
-      <h1>Header</h1>
-    </div>
+    <Container>
+      <nav className="navigation">
+        <Link to="/" className="navbar-item">
+          <figure className="image">
+              <img src={logo} alt="Nolletta" style={{ width: '175px' }} />
+          </figure>
+        </Link>
+        <div class="nav-links">
+          <Link to="/">Home</Link>
+          <Separator/>
+          <Link to="/projects">Projects</Link>
+          <Separator/>
+          <Link to="/about">About</Link>         
+        </div>
+      </nav>
+    </Container>
   );
 }
 
