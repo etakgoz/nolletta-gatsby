@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from '../img/logo.svg'
+import logo from '../img/logo.svg';
 import { Container } from 'react-bootstrap';
-import { Link } from 'gatsby'
+import { Link } from 'gatsby';
 
 const Separator = (props) => {
   return (
@@ -28,6 +28,6 @@ const Header = (props) => {
       </nav>
     </Container>
   );
-}
+};
 
 export default Header;

@@ -32,6 +32,19 @@ a {
   }
 }
 
+.about-me {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+  margin: 16px auto;
+
+  .profile-photo {
+    width: 64px;
+    margin-right: 20px;
+  }
+}
+
 main {
   margin-bottom: 80px;
 }

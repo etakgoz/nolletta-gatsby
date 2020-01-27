@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Welcome from '../components/welcome';
+import AboutMe from '../components/about-me';
 import { Container } from 'react-bootstrap';
 
 export default ({ data }) => {
@@ -10,6 +11,7 @@ export default ({ data }) => {
     <Layout>
       <SEO title="home" />
       <Welcome message="Welcome to nolletta."/>
+      <AboutMe />
       <Container>
       {data.allWordpressPost.edges.map(({ node }) => (
         <section>
