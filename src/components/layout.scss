@@ -2,20 +2,81 @@ body {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
+a {
+  &:hover {
+    text-decoration: none;
+    border-bottom: solid 1px;
+    margin-bottom: -1px;
+  }
+
+}
+
 .page {
   margin: 50px auto;
 }
 
 .navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
+
+  .logo {
+    &:hover { text-decoration: none; border-bottom: none; margin-bottom: 0; }
+  }
+}
+
+.nav-links {
+  span, a {
+    margin-left: 12px;
+    font-size: 16px;
+    letter-spacing: 1.7px;
+  }
+}
+
+main {
+  margin-bottom: 80px;
+}
+
+article {
+  padding: 40px 0;
+}
+
+article header {
+  h1 {
+    font-weight: 600;
+    font-size: 48px;
+    letter-spacing: 3.4px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+}
+
+footer {
   .nav-links {
-    span, a {
-      margin-left: 12px;
-      font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .social-links {
+    text-align: center;
+    margin-top: 32px;
+    a {
+      margin-right: 24px;
+      display: inline-block;
+      &:hover { text-decoration: none; border-bottom: none; margin-bottom: 0; }
+      &:last-child { margin-right: 0; }
+    }
+  }
+
+  .footer-text {
+    text-align: center;
+    margin-top: 20px;
+    p {
+      font-style: italic;
+      font-size: 14px;
+      color: #AAAAAA;
       letter-spacing: 1.7px;
     }
-  } 
+  }
 }
 
 

@@ -13,7 +13,7 @@ const Header = (props) => {
   return (
     <Container>
       <nav className="navigation">
-        <Link to="/" className="navbar-item">
+        <Link to="/" className="navbar-item logo">
           <figure className="image">
               <img src={logo} alt="Nolletta" style={{ width: '175px' }} />
           </figure>

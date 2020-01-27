@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
+import { Container, Row } from 'react-bootstrap';
 import { graphql } from "gatsby"
 
 export default ({ data }) => {
@@ -7,10 +8,19 @@ export default ({ data }) => {
   console.log(post)
   return (
     <Layout>
-      <div>
-        <h1>{post.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.content }} />
-      </div>
+      <Container>
+        <main>
+          <article>
+            <header>
+              <h1>{post.title}</h1>
+            </header>
+            <Row>
+              <div dangerouslySetInnerHTML={{ __html: post.content }} class="offset-md-2 col-md-8"/>
+            </Row>
+
+          </article>
+        </main>
+      </Container>
     </Layout>
   )
 }

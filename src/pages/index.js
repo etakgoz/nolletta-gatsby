@@ -2,21 +2,28 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Welcome from '../components/welcome';
+import { Container } from 'react-bootstrap';
 
 export default ({ data }) => {
   return (
     <Layout>
       <SEO title="home" />
-      <h1>My WordPress Blog</h1>
-      <h4>Posts</h4>
+      <Welcome message="Welcome to nolletta."/>
+      <Container>
       {data.allWordpressPost.edges.map(({ node }) => (
-        <div key={node.slug}>
-          <Link to={node.slug}>
-            <p>{node.title}</p>
-          </Link>
-          <div dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-        </div>
+        <section>
+          <div key={node.slug}>
+            <article>
+              <Link to={node.slug}>
+                <p>{node.title}</p>
+              </Link>
+              <div dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+            </article>
+          </div>
+        </section>
       ))}
+      </Container>
     </Layout>
   )
 }
