@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
-import { Link } from 'gatsby'
 import profilePhoto from '../img/profile-photo.png';
 
 const AboutMe = (props) => {
