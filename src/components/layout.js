@@ -13,9 +13,9 @@ import Header from "./header"
 import Footer from "./footer"
 import "./layout.scss"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, pageClass }) => {
   return (
-    <div className="page">
+    <div className={`page ${pageClass}`}>
       <Header siteTitle="Nolletta" />
       <main>{children}</main>
       <Footer/>

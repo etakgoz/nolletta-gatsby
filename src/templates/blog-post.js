@@ -7,7 +7,7 @@ export default ({ data }) => {
   const post = data.allWordpressPost.edges[0].node
   console.log(post)
   return (
-    <Layout>
+    <Layout pageClass="blog-post">
       <Container>
         <main>
           <article>

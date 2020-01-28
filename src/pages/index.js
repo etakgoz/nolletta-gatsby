@@ -8,7 +8,7 @@ import { Container, Row } from 'react-bootstrap';
 
 export default ({ data }) => {
   return (
-    <Layout>
+    <Layout pageClass="home">
       <SEO title="home" />
       <Welcome message="Welcome to nolletta."/>
       <AboutMe />
