@@ -1,0 +1,98 @@
+/* Basic HTML Elements */
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 20px;
+  }
+  
+  a {
+    &:hover {
+      text-decoration: none;
+      border-bottom: solid 1px;
+      margin-bottom: -1px;
+    }
+  }
+  /* END: Basic HTML Elements */
+  
+  /* Common Elements */
+  .page {
+    margin: 50px auto;
+  
+    main {
+      margin-bottom: 80px;
+    }
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between; 
+  
+    .logo {
+      &:hover { text-decoration: none; border-bottom: none; margin-bottom: 0; }
+    }
+  }
+  
+  .nav-links {
+    span, a {
+      margin-left: 12px;
+      font-size: 1.25rem;
+      letter-spacing: 1.7px;
+    }
+  }
+  
+  .blog-posts {
+    margin-top: 24px;
+    .blog-post {
+      margin-bottom: 72px;
+      a {
+        font-weight: 600;
+        font-size: 2rem;
+        letter-spacing: 3.4px;
+        color: $color-blue;
+        
+        &:hover { background-color: $color-light-yellow }
+  
+        &.small {
+          font-size: 0.9rem;
+          letter-spacing: normal;
+          color: $color-black;
+        }
+      }
+  
+      time {
+        display: block;
+        margin: 10px auto 15px;
+        font-size: 0.8rem;
+        color: $color-gray;
+        letter-spacing: 1.28px;
+      }
+    }
+  }
+  
+  footer {
+    .nav-links {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .social-links {
+      text-align: center;
+      margin-top: 32px;
+      a {
+        margin-right: 24px;
+        display: inline-block;
+        &:hover { text-decoration: none; border-bottom: none; margin-bottom: 0; }
+        &:last-child { margin-right: 0; }
+      }
+    }
+  
+    .footer-text {
+      text-align: center;
+      margin-top: 20px;
+      p {
+        font-style: italic;
+        font-size: 0.8rem;
+        color: $color-light-gray;
+        letter-spacing: 1.7px;
+      }
+    }
+  }

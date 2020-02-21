@@ -6,7 +6,18 @@
 5. Implement Posts Page
 6. Implement welcome animation
 7. Implement projects 
-8. SEO Element?
+8. SEO Element? (favicon etc)
 9. Text after social links
 10. Review Spacing at home page
-11. Deploy at Amazon Cloudfront
+11. Content with Featured Images
+12. Google Analytics
+13. Mobile Testing and mobile menu
+14. Deploy at Amazon Cloudfront
+
+
+Things to check:
+
+1. rel=reopener
+2. template element
+3. backtick on react/javascript
+4. webpack?

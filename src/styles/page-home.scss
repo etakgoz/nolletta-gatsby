@@ -1,0 +1,26 @@
+/* Home Page */
+.page.home {
+    .welcome-msg-container {
+      margin: 48px auto;
+      h1 {
+        font-weight: 600;
+        font-size: 3rem;
+        color: $color-black;
+        letter-spacing: 5.11px;
+      }
+    }
+  
+    .about-me {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0 20px;
+      margin: 16px auto;
+    
+      .profile-photo {
+        width: 64px;
+        margin-right: 20px;
+      }
+    }
+  }
+  /* END: Home Page */
