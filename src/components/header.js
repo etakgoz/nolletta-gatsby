@@ -9,25 +9,51 @@ const Separator = (props) => {
   );
 };
 
-const Header = (props) => {
-  return (
-    <Container>
-      <nav className="navigation">
-        <Link to="/" className="navbar-item logo">
-          <figure className="image">
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isMenuCollapsed: true
+    };
+
+    this.toggleMobileMenu = this.toggleMobileMenu.bind(this);
+  }
+
+  toggleMobileMenu() {
+    this.setState(prevState => ({
+      isMenuCollapsed: !prevState.isMenuCollapsed
+    }));
+  }
+
+
+
+  render() {
+    const hamburgerClass = this.state.isMenuCollapsed ? "hamburger hamburger--spin" : "hamburger hamburger--spin is-active";
+
+    return (
+      <Container>
+        <nav className="navigation">
+          <Link to="/" className="navbar-item logo">
               <img src={logo} alt="Nolletta" style={{ width: '175px' }} />
-          </figure>
-        </Link>
-        <div className="nav-links">
-          <Link to="/">Home</Link>
-          <Separator/>
-          <Link to="/projects">Projects</Link>
-          <Separator/>
-          <Link to="/about">About</Link>         
-        </div>
-      </nav>
-    </Container>
-  );
+          </Link>
+          <div className="nav-links">
+            <Link to="/">Home</Link>
+            <Separator/>
+            <Link to="/projects">Projects</Link>
+            <Separator/>
+            <Link to="/about">About</Link>         
+          </div>
+          <button className={hamburgerClass} type="button" onClick={this.toggleMobileMenu}>
+            <span className="hamburger-box">
+              <span className="hamburger-inner"></span>
+            </span>
+          </button>  
+        </nav>
+      </Container>
+    );
+  }
+
 };
 
 export default Header;

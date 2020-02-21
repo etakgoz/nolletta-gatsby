@@ -9,7 +9,7 @@
 5. Implement projects 
 6. SEO Element? (favicon etc)
 7. Text after social links
-8.  Review Spacing at home page
+8.  Review use of semantic HTML, especially on navigation for mobile
 9.  Content with Featured Images
 10. Google Analytics
 11. Mobile Testing

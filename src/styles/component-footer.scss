@@ -1,0 +1,28 @@
+footer {
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .social-links {
+        text-align: center;
+        margin-top: 32px;
+        a {
+        margin-right: 24px;
+        display: inline-block;
+        &:hover { text-decoration: none; border-bottom: none; margin-bottom: 0; }
+        &:last-child { margin-right: 0; }
+        }
+    }
+
+    .footer-text {
+        text-align: center;
+        margin-top: 20px;
+        p {
+            font-style: italic;
+            font-size: 0.8rem;
+            color: $color-light-gray;
+            letter-spacing: 1.7px;
+        }
+    }
+}
