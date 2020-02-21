@@ -1,11 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
 import { Container, Row } from 'react-bootstrap';
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 export default ({ data }) => {
-  const post = data.allWordpressPost.edges[0].node
-  console.log(post)
+  const post = data.allWordpressPost.edges[0].node;
+  console.log(post);
   return (
     <Layout pageClass="blog-post">
       <Container>
@@ -13,9 +13,10 @@ export default ({ data }) => {
           <article>
             <header>
               <h1>{post.title}</h1>
+              <p className="byline">by <Link to="/about">E. Tolga Akgoz</Link><time pubdate="true" dateTime={post.date}>{post.date}</time></p>
             </header>
             <Row>
-              <div dangerouslySetInnerHTML={{ __html: post.content }} class="offset-md-2 col-md-8"/>
+              <div dangerouslySetInnerHTML={{ __html: post.content }} className="col-lg-8 offset-lg-2 col-md-10 offset-md-1"/>
             </Row>
 
           </article>
@@ -31,6 +32,7 @@ export const query = graphql`
         node {
           title
           content
+          date(formatString: "MMMM DD, YYYY")
         }
       }
     }
