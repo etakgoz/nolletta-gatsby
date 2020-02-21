@@ -1,0 +1,27 @@
+.typewriter {
+
+    height: 3rem;
+    display: block;
+    h1 {
+      font-weight: 600;
+      font-size: 3rem;
+      line-height: 3rem;
+      color: $color-black;
+      letter-spacing: 5.11px;
+      display: inline-block;
+
+      .caret {
+        font-weight: normal;
+        color: $color-blue;
+        animation: blink-caret .5s step-end infinite;
+      }
+    }
+
+
+}
+
+
+@keyframes blink-caret {
+  from, to { color: transparent }
+  50% { color: $color-blue; }
+}

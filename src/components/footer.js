@@ -15,14 +15,14 @@ const Footer = (props) => {
   return (
     <Container>
         <footer>
-            <div class="nav-links col-md-4 offset-md-4">
+            <div className="nav-links col-md-4 offset-md-4">
                 <Link to="/">Home</Link>
                 <Separator/>
                 <Link to="/projects">Projects</Link>
                 <Separator/>
                 <Link to="/about">About</Link>         
             </div>
-            <div class="social-links col-md-4 offset-md-4">
+            <div className="social-links col-md-4 offset-md-4">
                 <a href="https://twitter.com/etakgoz" target="_blank" rel="noopener noreferrer">
                     <img src={twitterIcon} alt="Twitter" />
                 </a>
@@ -34,7 +34,7 @@ const Footer = (props) => {
                 </a>
             </div>
 
-            <div class="footer-text">
+            <div className="footer-text">
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
         </footer>

@@ -18,7 +18,7 @@ const Header = (props) => {
               <img src={logo} alt="Nolletta" style={{ width: '175px' }} />
           </figure>
         </Link>
-        <div class="nav-links">
+        <div className="nav-links">
           <Link to="/">Home</Link>
           <Separator/>
           <Link to="/projects">Projects</Link>
