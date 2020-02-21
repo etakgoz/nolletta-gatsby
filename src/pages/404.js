@@ -12,7 +12,7 @@ const NotFoundPage = () => (
           <h1>404: Page Not Found</h1>
         </header>
         <Row>
-          <div class="offset-md-2 col-md-8">
+          <div className="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
               <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
           </div>
         </Row>

@@ -14,7 +14,7 @@ export default ({ data }) => {
       <AboutMe />
       <Container>
         <Row>
-          <div className="blog-posts col-md-8 offset-md-2">
+          <div className="blog-posts col-lg-8 offset-lg-2 col-md-10 offset-md-1">
             {data.allWordpressPost.edges.map(({ node }) => (
             <div key={node.slug}>
               <article className="blog-post">

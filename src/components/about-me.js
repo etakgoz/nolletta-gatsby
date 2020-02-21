@@ -7,7 +7,7 @@ const AboutMe = (props) => {
     <Container>
         <section>
             <Row>
-                <div className="col-md-8 offset-md-2">
+                <div className="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
                     <div className="about-me">
                         <figure>
                             <img className="profile-photo" src={profilePhoto} alt="E. Tolga Akgöz"/>

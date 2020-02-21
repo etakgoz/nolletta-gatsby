@@ -1,20 +1,10 @@
+@import "../styles/component-typewriter.scss";
+@import "../styles/component-about-me.scss";
+
 /* Home Page */
 .page.home {
     .typewriter {
       margin: 48px auto;
     }
-  
-    .about-me {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 0 20px;
-      margin: 16px auto;
-    
-      .profile-photo {
-        width: 64px;
-        margin-right: 20px;
-      }
-    }
-  }
-  /* END: Home Page */
+}
+/* END: Home Page */

@@ -2,15 +2,33 @@
 .page.blog-post {
     article {
       padding: 40px 0;
+
+      h1, h2, h3, h4, p, fieldset, ul, ol {
+        margin-bottom: 2rem;
+      }
     
       header {
+        margin-bottom: 4rem;
         h1 {
           font-weight: 600;
-          font-size: 3rem;
+          font-size: 4rem;
           letter-spacing: 3.4px;
           text-align: center;
-          margin-bottom: 32px;
+          margin-bottom: 0.5rem;
         }
+
+        .byline {
+          text-align: center;
+          font-size: 1rem;
+
+          a { color: $red; font-weight: 600; }
+
+          time { display: inline-block; margin-left: 10px; }
+        }
+      }
+
+      p {
+        margin-bottom: 2rem;
       }
     }
   }
